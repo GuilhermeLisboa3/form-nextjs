@@ -1,18 +1,20 @@
 'use client'
 import { useState } from "react"
+import { useFormContext } from "react-hook-form"
 
 type ListStarProps = {
   quantity: number
 }
 export const ListStar = ({ quantity }: ListStarProps) => {
   const [rating, setRating] = useState(0)
+  const { register } = useFormContext()
 
   return (
     <>{[...Array(quantity)].map((start, index) => {
       const currentRating = index + 1
       return (
         <label key={index}>
-          <input type="radio" name="rating" value={currentRating} onClick={() => setRating(currentRating)} className="invisible"/>
+          <input type="radio" value={currentRating} onClick={() => setRating(currentRating)} className="invisible" {...register('rating', { required: true })}/>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="45"
