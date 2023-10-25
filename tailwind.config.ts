@@ -16,6 +16,12 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-poppins)']
+      },
+      backgroundImage: {
+        "gradient-form": "linear-gradient(to top, #f2f4f8 75%, #19202D 25%);"
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
