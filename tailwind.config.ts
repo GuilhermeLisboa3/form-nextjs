@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-poppins)']
       },
+      boxShadow: {
+        "button": '0px 0px 0px 0px rgba(255, 213, 104, 0.24), 0px 1px 3px 0px rgba(255, 213, 104, 0.24), 0px 5px 5px 0px rgba(255, 213, 104, 0.20), 0px 11px 7px 0px rgba(255, 213, 104, 0.12), 0px 20px 8px 0px rgba(255, 213, 104, 0.04), 0px 31px 9px 0px rgba(255, 213, 104, 0.00)'
+      },
       backgroundImage: {
         "gradient-form": "linear-gradient(to top, #f2f4f8 75%, #19202D 25%);"
       },

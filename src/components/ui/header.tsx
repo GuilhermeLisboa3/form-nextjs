@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Avatar, AvatarImage } from "./avatar"
 import { Menubar, MenubarContent, MenubarMenu, MenubarTrigger } from "./menubar"
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className="bg-blue-dark p-8 flex justify-between items-center max-[440px]:flex-col gap-6 max-[440px]:p-3">
       <div className="flex gap-2">
@@ -33,5 +33,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header

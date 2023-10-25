@@ -4,7 +4,7 @@ import { useState } from "react"
 type ListStarProps = {
   quantity: number
 }
-const ListStar = ({ quantity }: ListStarProps) => {
+export const ListStar = ({ quantity }: ListStarProps) => {
   const [rating, setRating] = useState(1)
 
   return (
@@ -29,5 +29,3 @@ const ListStar = ({ quantity }: ListStarProps) => {
     }</>
   )
 }
-
-export default ListStar
