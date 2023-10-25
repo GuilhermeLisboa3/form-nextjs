@@ -5,10 +5,10 @@ import { MultipleChoice, SubTitle, TextArea, InputCheck, InputRadio } from './co
 export default function Home() {
   return (
     <main className="bg-gradient-form">
-      <p className="text-gray-light font-semibold text-xs pl-16">Pesquisa de Satisfação</p>
-      <div className="mx-auto w-[648px] mb-4">
-        <h1 className="font-bold text-[2.5rem] text-white text-left">Pesquisa de Satisfação</h1>
-        <form className="w-[648px] bg-white mb-4 rounded-2xl p-8">
+      <p className="text-gray-light font-semibold text-xs pl-16 max-[482px]:pl-3 max-[482px]:pt-3">Pesquisa de Satisfação</p>
+      <div className="mx-auto w-[648px] mb-4 max-[653px]:w-[95%]">
+        <h1 className="font-bold text-[2.5rem] text-white text-left max-[482px]:text-[1.5rem]">Pesquisa de Satisfação</h1>
+        <form className=" bg-white mb-4 rounded-2xl p-8">
           <h2 className="text-2xl font-semibold">Título da pergunta deve ficar aqui</h2>
           <p className="text-sm pt-2">Também é importante ter um espaço para o dono da loja colocar uma descrição da pergunta para ajudar o entendimento do usuário</p>
           <div className="flex gap-4 mb-8">
